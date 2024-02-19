@@ -1,0 +1,49 @@
+<div class="banner">
+    <marquee direction="left" behavior="alternate"><b> Welcome to Online Grocery Store</b> </marquee>
+    <div class="content">
+        <h1 class="mb-5">Fresh Items <br/> At Your Door.</h1>
+        <a routerLink="register-user"><strong>ORDER NOW </strong><i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<!-- step  -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">How to get <span class="highlight">fresh items</span></h1>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>select Items</p>
+            </div>
+        </div>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>fill the details</p>
+            </div>
+        </div>
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>your order delivered in minute</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Itemsbox  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Customers <span class="highlight">Favourites Grocery Items</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of itemsData;index as i">
+            <div class="itemsbox" *ngIf="i<=3">
+                <img src="{{fd.itemImg}}" />
+                <h1>{{fd.itemName}}</h1>
+                <p>{{fd.itemPrice | currency:'INR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>

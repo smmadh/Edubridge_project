@@ -1,0 +1,646 @@
+
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngIf="products">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products.itemImg}}">
+                <h1>{{products.itemName}}</h1>
+                <p>{{products.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <button type="button" class="btn btn-primary" (click)="addTocart(products)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+
+            </div>
+
+        </div>
+        <div class="col-lg-4" *ngIf="products1">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products1.itemImg}}">
+                <h1>{{products1.itemName}}</h1>
+                <p>{{products1.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <button type="button" class="btn btn-primary" (click)="addTocart(products1)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products2">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products2.itemImg}}">
+                <h1>{{products2.itemName}}</h1>
+                <p>{{products2.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products2)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products3">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products3.itemImg}}">
+                <h1>{{products3.itemName}}</h1>
+                <p>{{products3.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products3)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products4">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products4.itemImg}}">
+                <h1>{{products4.itemName}}</h1>
+                <p>{{products4.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products4)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-4" *ngIf="products5">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products5.itemImg}}">
+                <h1>{{products5.itemName}}</h1>
+                <p>{{products5.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products5)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products6">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products6.itemImg}}">
+                <h1>{{products6.itemName}}</h1>
+                <p>{{products6.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products6)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products7">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products7.itemImg}}">
+                <h1>{{products7.itemName}}</h1>
+                <p>{{products7.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products7)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products8">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products8.itemImg}}">
+                <h1>{{products8.itemName}}</h1>
+                <p>{{products8.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" id="btn" class="btn btn-primary" (click)="addTocart(products8)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products9">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products9.itemImg}}">
+                <h1>{{products9.itemName}}</h1>
+                <p>{{products9.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products9)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products10">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products10.itemImg}}">
+                <h1>{{products10.itemName}}</h1>
+                <p>{{products10.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products10)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products11">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products11.itemImg}}">
+                <h1>{{products11.itemName}}</h1>
+                <p>{{products11.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products11)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products12">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products12.itemImg}}">
+                <h1>{{products12.itemName}}</h1>
+                <p>{{products12.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products12)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products13">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products13.itemImg}}">
+                <h1>{{products13.itemName}}</h1>
+                <p>{{products13.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products13)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products14">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products14.itemImg}}">
+                <h1>{{products14.itemName}}</h1>
+                <p>{{products14.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products14)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products15">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products15.itemImg}}">
+                <h1>{{products15.itemName}}</h1>
+                <p>{{products15.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products15)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products16">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products16.itemImg}}">
+                <h1>{{products16.itemName}}</h1>
+                <p>{{products16.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products16)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products17">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products17.itemImg}}">
+                <h1>{{products17.itemName}}</h1>
+                <p>{{products17.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products17)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products18">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products18.itemImg}}">
+                <h1>{{products18.itemName}}</h1>
+                <p>{{products18.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products18)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products19">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products19.itemImg}}">
+                <h1>{{products19.itemName}}</h1>
+                <p>{{products19.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products19)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products20">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products20.itemImg}}">
+                <h1>{{products20.itemName}}</h1>
+                <p>{{products20.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products20)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products21">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products21.itemImg}}">
+                <h1>{{products21.itemName}}</h1>
+                <p>{{products21.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products21)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products22">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products22.itemImg}}">
+                <h1>{{products22.itemName}}</h1>
+                <p>{{products22.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products22)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products23">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products23.itemImg}}">
+                <h1>{{products23.itemName}}</h1>
+                <p>{{products23.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products23)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products24">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products24.itemImg}}">
+                <h1>{{products24.itemName}}</h1>
+                <p>{{products24.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products24)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products25">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products25.itemImg}}">
+                <h1>{{products25.itemName}}</h1>
+                <p>{{products25.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products25)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products26">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products26.itemImg}}">
+                <h1>{{products26.itemName}}</h1>
+                <p>{{products26.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products26)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products27">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products27.itemImg}}">
+                <h1>{{products27.itemName}}</h1>
+                <p>{{products27.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products27)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products28">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products28.itemImg}}">
+                <h1>{{products28.itemName}}</h1>
+                <p>{{products28.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products28)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products29">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products29.itemImg}}">
+                <h1>{{products29.itemName}}</h1>
+                <p>{{products29.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products29)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products30">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products30.itemImg}}">
+                <h1>{{products30.itemName}}</h1>
+                <p>{{products30.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products30)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products31">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products31.itemImg}}">
+                <h1>{{products31.itemName}}</h1>
+                <p>{{products31.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products31)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products32">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products32.itemImg}}">
+                <h1>{{products32.itemName}}</h1>
+                <p>{{products32.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products32)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products33">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products33.itemImg}}">
+                <h1>{{products33.itemName}}</h1>
+                <p>{{products33.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products33)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products34">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products34.itemImg}}">
+                <h1>{{products34.itemName}}</h1>
+                <p>{{products34.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products34)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products35">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products35.itemImg}}">
+                <h1>{{products35.itemName}}</h1>
+                <p>{{products35.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products35)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products36">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products36.itemImg}}">
+                <h1>{{products36.itemName}}</h1>
+                <p>{{products36.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products36)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products37">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products37.itemImg}}">
+                <h1>{{products37.itemName}}</h1>
+                <p>{{products37.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products37)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products38">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products38.itemImg}}">
+                <h1>{{products38.itemName}}</h1>
+                <p>{{products38.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products38)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products39">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products39.itemImg}}">
+                <h1>{{products39.itemName}}</h1>
+                <p>{{products39.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products39)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-4" *ngIf="products40">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products40.itemImg}}">
+                <h1>{{products40.itemName}}</h1>
+                <p>{{products40.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products40)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products41">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products41.itemImg}}">
+                <h1>{{products41.itemName}}</h1>
+                <p>{{products41.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products41)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products42">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products42.itemImg}}">
+                <h1>{{products42.itemName}}</h1>
+                <p>{{products42.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products42)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products43">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products43.itemImg}}">
+                <h1>{{products43.itemName}}</h1>
+                <p>{{products43.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products43)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products44">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products44.itemImg}}">
+                <h1>{{products44.itemName}}</h1>
+                <p>{{products44.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products44)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products45">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products45.itemImg}}">
+                <h1>{{products45.itemName}}</h1>
+                <p>{{products45.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products45)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products46">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products46.itemImg}}">
+                <h1>{{products46.itemName}}</h1>
+                <p>{{products46.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products46)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4" *ngIf="products47">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{products47.itemImg}}">
+                <h1>{{products47.itemName}}</h1>
+                <p>{{products47.itemPrice | currency:'INR'}}</p>
+                <br/>
+                <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]"> Add to Cart  &nbsp;<i class="bi bi-bag"></i></a> -->
+                <button type="button" class="btn btn-primary" (click)="addTocart(products47)"> Add to Cart &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<a class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+
+        
+
+
+   
+
+        
+
+
+    
+
+

@@ -1,0 +1,76 @@
+body {
+    color: rgb(18, 16, 16);
+    margin-bottom: 15%;
+}
+h1 {
+    text-align: center;
+}
+.grocery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 7px 7px 0px white;
+    transition: 400ms;
+}
+
+.grocery :hover {
+    filter: grayscale();
+    transform: scale(1.03);
+    
+}
+.container{
+    width: 31%;
+    float: left;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(152, 245, 12);
+    border-radius: 10px;
+    color: black;
+    margin: 9px;
+}
+.container1{
+    width: 29%;
+    float: left;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 15px;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 9px;
+}
+.container2{
+    width: 30%;
+    float: right;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 15px;
+    background-color: rebeccapurple;
+    color: black;
+    border-radius: 10px;
+    margin: 9px;
+}
+.container3{
+    width: 40%;
+    float: left;
+    justify-content: space-between;
+    text-align: left;
+    padding: 15px;
+    background-color: rgb(153, 126, 51);
+    color: white;
+    border-radius: 10px;
+    margin: 9px;
+    
+}
+.container4{
+    width: 40%;
+    float: right;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(235, 228, 242);
+    color: black;
+    border-radius: 10px;
+    margin: 9px;
+}
